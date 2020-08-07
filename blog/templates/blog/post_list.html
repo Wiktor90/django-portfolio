@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Programistyczne</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Projekty</a></h1>
+        </div>
+        {% for post in posts %}
+            <div>
+                <p>opublikowano: {{ post.published_date }}</p>
+                <h2><a hfer="#">{{ post.title }}</a></h2>
+                <p>{{post.text | linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
