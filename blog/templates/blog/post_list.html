@@ -1,87 +1,62 @@
+{% extends 'blog/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
+{% block content %}
+	<section>
+		<div class="about">
+			<header>
+				<h1>Witaj w moim świecie programowania</h1>
+				<p style="font-size: 22px; font-style: italic;">
+				"Talk is cheap. Show me the code" - Linus Torvalds
+				</p>
+			</header>
 
-<head>
+			<div class="author-frame">
+				<div class="author-img">
+					<figure>
+						<a hfref="#"><img src="{% static 'blog/python.jpg' %}" alt="Wiktor"></a>
+					</figure>
+				</div>
 
-    <meta charset="utf-8">
-    <meta name="author" content="Wiktor Witkowski">
-    <title>Portfolio Programistyczne</title>
+				<div class="author-text">
+					<h2>Kilka słów o autorze</h2>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Nulla finibus commodo ipsum, non dapibus risus porta nec. 
+					Phasellus consectetur porta justo, eu pellentesque ante finibus ac. 
+					Sed aliquet fringilla velit, et mattis ex rutrum eget. 
+					Fusce ultricies sem sed libero luctus, ac varius ante tempor. 
+					Nulla ut velit nec sem maximus efficitur. 
+					Aliquam congue dapibus est quis dictum. 
+					Suspendisse lacinia mauris vitae purus aliquam, et vehicula nulla maximus. Nullam vulputate felis id tellus convallis auctor. 
+					Cras pellentesque dui ac enim pulvinar, sit amet elementum massa suscipit. Morbi mollis lacus eu metus eleifend, vel fermentum diam rhoncus. Suspendisse ullamcorper efficitur lectus, vel tincidunt nibh finibus non. 
+					Phasellus dapibus felis et tortor mollis, id tempus sapien posuere.
+					</p>
+				</div>	
+			</div>
+		</div>
+	</section>
 
-    <link rel="stylesheet" href="{% static 'blog/style.css' %}" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-    
-</head>
+	<section id="projects">
+		<div class="projects-list">
+			<header>
+				<h1>Lista Projektów</h1>
+				<p>
+				Drogi widzu bardzo cieszę się, ze tu jesteś i poświęcasz czas na obejrzenie moich projektów.
+				Poniżej znajduje się lista, z krótkim opisem. Kliknij w poszczególny link aby poznać detale.
+				</p>
+			</header>
+			{% for post in posts %}
+			<div class="projekt">
+				<div class="projekt-img">
+					<img src="{{ post.image.url }}" alt="logo">
+				</div>
 
-
-<body>
-
-    <header>
-        <h1 class="logo">Programistyczne Portfolio</h1>
-    </header>
-
-    <main>
-        <article>
-            <section id="mid">
-
-                <div class="content">
-                    <header>
-                        <h1 class="subtitle"> Moje Projekty</h1>
-                        <p class="description">"Talk is cheap. Show me the code" - Linus Torvalds</p>
-                    </header>
-                </div>
-
-                <div class="projekt">
-                    
-                </div>
-
-            </section>
-        </article>
-    </main>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-    <body>
-        <div>
-            <h1><a href="/">Projekty</a></h1>
-        </div>
-        {% for post in posts %}
-            <div>
-                <p>opublikowano: {{ post.published_date }}</p>
-                <h2><a hfer="#">{{ post.title }}</a></h2>
-                <p>{{post.text | linebreaksbr }}</p>
-            </div>
-        {% endfor %}
-    </body>
-
--->
+				<div class="projekt-text">
+					<a href="#" class="projlink"><h2>{{ post.title }}</h2></a>
+					<p>{{ post.description }}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Portfolio Programistyczne</title>
+	<meta name="description" content="Strona opowiadająca o autorze i prezentująca autorskie programy. Znajduje się tu dokładny opis wszystkich moich projektów programistycznych!">
+	<meta name="keywords" content="python, programowanie, django, developer, programista">
+	<meta name="author" content="Wiktor Witkowski"> <!-- Layout strony głównej inspirowany rozwiązaniami z kursu HTML Mirosława Zelenta-->
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	
+	<link rel="stylesheet" href="{% static 'blog/main.css' %}">
+	<link rel="stylesheet" href="{% static 'blog/css/fontello.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+	<header>
+		<h1 class="logo">Programistyczne Portfolio</h1>
+
+		<nav>
+
+		</nav>
+	</header>
+
+	<main>
+
+		<article>
+
+			{% block content %}
+			{% endblock %}
+			<section>
+
+				<div class="contact">
+					<header>
+						<h1>Kontakt z autorem</h1>
+						<p>
+						Dorgi widzu, jeśli spodobały Ci się moje projekty i chciałbyś zaproponować współprace 
+						lub udział w innej inicjatywie programistycznej,
+						to serdecznie zapraszam do kontaktu na poniższy adres e-mail.
+						</p>
+					</header>
+				</div>
+
+			</section>
+		</article>
+	</main>
+
+	<footer>
+		<div class="socials">
+			<div class="socialdivs">
+
+				<a href="https://linkedin.com/in/wiktorwitkowski" target="_blank" class="soclink">
+					<div class="linkedin">
+						<i class="icon-linkedin-squared"></i>
+					</div>
+				</a>
+
+				<a href="https://github.com/Wiktor90" target="_blank" class="soclink">
+					<div class="git">
+						<i class="icon-github-circled"></i>
+					</div>
+				</a>
+
+				<div style="clear:both"></div>
+			</div>
+		</div>
+		<div class="thx">
+			&#9884 2020 - Dziękuję za wizytę !
+		</div>
+	</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+body
+{
+	margin: 0;
+	background-color: #2F3336;
+	color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1.logo
+{
+	font-size: 44px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	color: #efefef
+}
+
+nav
+{
+	background-color: #1c74b2;
+	padding: 20px;
+}
+
+.about
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding: 0
+}
+
+h1
+{
+	font-size: 44px;
+	font-weight: 400;
+	color: #39a5f1;
+	margin-bottom: 20px;
+}
+
+.author-frame
+{
+	padding: 10px;
+	text-align: justify;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.author-img
+{
+	display: inline-block;
+	width: 260px;
+}
+
+.author-img img
+{
+	width: 240px;
+	height: 250px;
+}
+
+figure
+{
+	margin: 5px;
+	padding: 0px;
+}
+
+.author-text
+{
+	display: inline-block;
+	width: 650px;
+	margin-left:  10px;
+}
+
+h2
+{
+	font-size: 20px;
+	font-weight: 400;
+	color: #39a5f1;
+}
+
+#projects
+{
+	background-color: #191d21;
+}
+
+.projects-list
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.projekt
+{
+	background-color: #222930;
+	padding: 10px;
+	text-align: justify;
+	margin-top: 40px;
+	border-radius: 5px;
+}
+
+.projekt-img
+{
+	display: inline-block;
+	margin-left: 30px;
+	width: 120px;
+}
+
+.projekt-img img
+{
+	height: 95px;
+	width: 95px;
+	opacity: 0.8;
+}
+
+.projekt-text
+{
+	display: inline-block;
+	width: 750px;
+	font-size: 15px;
+}
+
+.contact
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	text-align: center;
+	padding-bottom: 70px;
+	margin-bottom: 50px;
+}
+
+.socials
+{
+	width: 100%;
+	text-align: center;
+	background-color: #191d21;
+}
+
+.socialdivs
+{
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.linkedin
+{
+	width: 475px;
+	height: 155px;
+	float: left;
+}
+
+.linkedin:hover
+{
+	background-color: #0b5e86;
+}
+
+.git
+{
+	width: 475px;
+	height: 155px;
+	float: left;
+}
+
+.git:hover
+{
+	background-color: #5a1a77;
+}
+
+.thx
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 20px;
+}
+
+a.soclink
+{
+	color:#efefef;
+	text-decoration: none;
+}
+
+a.projlink
+{
+	text-decoration: none;
+}
+
+a.projlink:hover
+{
+	text-decoration: underline;
+	color: #1c74b2;
+}
