@@ -48,11 +48,16 @@
 			{% for post in posts %}
 			<div class="projekt">
 				<div class="projekt-img">
-					<img src="{{ post.image.url }}" alt="logo">
+					<div class="overlay">
+						<a href="#"><img src="{{ post.image.url }}" alt="logo"></a>
+						<a class="link" href="#">
+							<span class-"icon"><i class="icon-plus"></i></span>
+						</a>
+					</div>
 				</div>
 
 				<div class="projekt-text">
-					<a href="#" class="projlink"><h2>{{ post.title }}</h2></a>
+					<a href="{% url 'post_details' pk=post.pk %}" class="projlink"><h2>{{ post.title }}</h2></a>
 					<p>{{ post.description }}</p>
 				</div>
 			</div>
