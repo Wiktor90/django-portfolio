@@ -236,13 +236,37 @@ a.projlink:hover
 
 .overlay:hover .link
 {
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 .icon
 {
 	display: block;
-	top: 25%;
+	top: 20%;
+	left: 20%;
 	position: relative;
-	font-size: 32px;
+	font-size: 40px;
+	color:#efefef;
+}
+
+.button-place
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 65px;
+}
+
+.backbutton
+{
+	background-color: #1c74b2;
+	padding: 15px;
+	color: #efefef;
+	font-size: 19px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.backbutton:hover
+{
+	background-color: #196499;
 }

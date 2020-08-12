@@ -5,16 +5,17 @@
 
     <div class="about">
         <header>
-            <h1>{{post.title}}</h1>
+            <h1 style="margin-top: 0; padding-top: 44px;">{{post.title}}</h1>
         </header>
 
         <div class="post-frame">
             <p>{{ post.text | linebreaksbr }}</p>
         </div>
-            
+
+        <div class="button-place">
+            <a href="{% url 'post_list' %}" class="backbutton">Powrót do projektów</a>
+        </div>
     </div>
-
-
 
 </section>
 {% endblock %}
