@@ -269,4 +269,31 @@ a.projlink:hover
 .backbutton:hover
 {
 	background-color: #196499;
+	font-weight: 700;
+}
+
+.repo-button-place
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 40px;
+}
+
+.repobutton
+{
+	background-color: #28a745;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 27px;
+	padding-left: 27px;
+	color: #efefef;
+	font-size: 19px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.repobutton:hover
+{
+	background-color:#3a9750;
+	font-weight: 700;
 }
